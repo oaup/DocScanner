@@ -1,0 +1,2 @@
+# DocScanner
+一款简单基于Tesseract的OCR识别的Android端Demo。

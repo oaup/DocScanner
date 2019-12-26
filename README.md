@@ -11,4 +11,4 @@
 - 支持灰度模式
 - 支持灰白文档
 - 支持识别结果分享
-- apk下载地址CNDN：
+- apk下载地址CNDN：https://download.csdn.net/download/Binary2014/12053738

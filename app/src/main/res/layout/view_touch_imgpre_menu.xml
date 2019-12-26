@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oaup.ocr.docscanner.views.ViewTouchImgMenu xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/holo_bule_dark_deep">
+    <ImageView
+        android:id="@+id/touch_menu_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:background="@drawable/document_bottom_menu_bg"/>
+    <ImageView
+        android:id="@+id/touch_menu_rightOfleft"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:background="@drawable/document_bottom_menu_bg"/>
+    <ImageView
+        android:id="@+id/touch_menu_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:background="@drawable/document_bottom_menu_bg"/>
+    <ImageView
+        android:id="@+id/touch_menu_leftOfright"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:background="@drawable/document_bottom_menu_bg"/>
+    <ImageView
+        android:id="@+id/touch_menu_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:background="@drawable/document_bottom_menu_bg"/>
+
+</com.oaup.ocr.docscanner.views.ViewTouchImgMenu>

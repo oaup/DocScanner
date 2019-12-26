@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oaup.ocr.docscanner.views.HScrollImgPreMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+    android:background="@color/holo_green_mo">
+
+    <com.oaup.ocr.docscanner.views.ImageText
+        android:id="@+id/hScrollLeft0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:background="@drawable/enhance_bg"/>
+
+    <com.oaup.ocr.docscanner.views.ImageText
+        android:id="@+id/hScrollLeft1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:background="@drawable/enhance_bg"/>
+
+    <com.oaup.ocr.docscanner.views.ImageText
+        android:id="@+id/hScrollLeft2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:background="@drawable/enhance_bg"/>
+
+    <com.oaup.ocr.docscanner.views.ImageText
+        android:id="@+id/hScrollLeft3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:background="@drawable/enhance_bg"/>
+
+    <com.oaup.ocr.docscanner.views.ImageText
+        android:id="@+id/hScrollLeft4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:background="@drawable/enhance_bg"/>
+
+    <com.oaup.ocr.docscanner.views.ImageText
+        android:id="@+id/hScrollLeft5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:background="@drawable/enhance_bg"/>
+
+</com.oaup.ocr.docscanner.views.HScrollImgPreMenu>

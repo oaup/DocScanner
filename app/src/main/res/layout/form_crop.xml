@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oaup.ocr.docscanner.views.ThreeVerticalLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:screenOrientation="portrait"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+               android:background="@color/bg_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/topbar_height"
+        android:background="@color/holo_bule_dark_deep"/>
+
+    <!--<include-->
+        <!--android:id="@+id/layImgTouchPreview"-->
+        <!--layout="@layout/view_imgtouch_preview"/>-->
+    <FrameLayout
+        android:id="@+id/layImgTouchPreview"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="@color/bg_black">
+        <ImageView
+            android:id="@+id/ImgTouchPreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="@color/bg_black"
+            android:layout_gravity="center"/>
+        <com.oaup.ocr.docscanner.views.TouchRectView
+            android:id="@+id/picEditTouchRect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="#00ff0000"
+            android:layout_gravity="center"/>
+        <com.oaup.ocr.docscanner.views.PicZoom
+            android:id="@+id/picEditPicZoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal|top" />
+        <ProgressBar
+            android:id="@+id/picCircleProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/circleprogress"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <include
+        android:id="@+id/layImgTouchMenu"
+        layout="@layout/view_touch_imgpre_menu"/>
+
+</com.oaup.ocr.docscanner.views.ThreeVerticalLayout>

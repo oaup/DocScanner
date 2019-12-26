@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/topbar_height"-->
+        <!--android:background="@color/holo_bule_dark_deep"/>-->
+
+    <!--<SurfaceView-->
+        <!--android:id="@+id/surfaceView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"/>-->
+    <include
+        android:id="@+id/layPicPickPreview"
+        layout="@layout/view_picpickpreview"/>
+
+    <!--<include-->
+        <!--android:id="@+id/form_take_picture_menu"-->
+        <!--layout="@layout/view_takepic_menu"/>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/holo_bule_dark_deep"
+        android:layout_gravity="bottom">
+        <ImageView
+            android:id="@+id/takepic_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/document_bottom_menu_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"/>
+        <ImageView
+            android:id="@+id/takepic_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/document_bottom_menu_bg"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</FrameLayout>

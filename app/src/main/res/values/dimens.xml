@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="form_main_linear_height">90dp</dimen>
+    <dimen name="topbar_height">40dp</dimen>
+    <dimen name="menubar_height">48dp</dimen>
+    <dimen name="doc_name_list_textsize">28dp</dimen>
+    <dimen name="doc_name_grid_textsize">16dp</dimen>
+    <dimen name="doc_time_list_textsize">20dp</dimen>
+    <dimen name="doc_time_grid_textsize">15dp</dimen>
+    <dimen name="doc_tag_tip_textsize">10dp</dimen>
+    <dimen name="doc_main_pic_btm">16dp</dimen>
+</resources>

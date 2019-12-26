@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.oaup.ocr.docscanner.views.ThreeVerticalLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/bg_black">
+
+    <HorizontalScrollView
+        android:id="@+id/enhanceHScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:scrollbars="none">
+        <include
+            android:id="@+id/enhanceMenu"
+            layout="@layout/view_hscroll_menu"/>
+    </HorizontalScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/topbar_height"-->
+        <!--android:background="@color/holo_bule_dark_deep"/>-->
+
+    <FrameLayout
+        android:id="@+id/enhanceFrame"
+        android:layout_width = "match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/image_border">
+        <ImageView
+            android:id="@+id/enhanceImgShow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"/>
+        <ProgressBar
+            android:id="@+id/picCircleProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/circleprogress"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/holo_bule_dark_deep"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/document_bottom_menu_bg"
+            android:src="@mipmap/ic_capture_confirm_back"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/iv_rotateleft"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/document_bottom_menu_bg"
+            android:src="@mipmap/ic_rotate_left"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/iv_rotateright"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/document_bottom_menu_bg"
+            android:src="@mipmap/ic_imgpage_toolbar_rotate"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/iv_ocr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:background="@drawable/document_bottom_menu_bg"
+            android:src="@mipmap/ic_img_ocr"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+</com.oaup.ocr.docscanner.views.ThreeVerticalLayout>

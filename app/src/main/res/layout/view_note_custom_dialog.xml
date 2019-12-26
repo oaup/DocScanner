@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/idNoteDialogClose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/close"
+                android:textColor="@color/holo_green_mo"
+                android:clickable="true"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/idNoteDialogTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cheat"
+                android:gravity="center"
+                android:textSize="@dimen/doc_time_list_textsize"
+                android:textColor="@color/bg_black"/>
+
+            <TextView
+                android:id="@+id/idNoteDialogRight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/edit"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/holo_green_mo"
+                android:clickable="true"
+                android:layout_marginRight="14dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:background="@color/holo_green_mo"/>
+        <ScrollView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <EditText
+                    android:id="@+id/idNoteDialogEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:textColor="@color/bg_black"
+                    android:gravity="left|top"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"
+                    android:hint="@string/please_write_cheat"
+                    android:textCursorDrawable="@color/holo_green_mo">
+                    <requestFocus></requestFocus>
+                </EditText>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
